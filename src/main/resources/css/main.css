@@ -1,0 +1,63 @@
+.root {
+    main-color: rgb(237, 255, 242);
+    -fx-background-color: main-color;
+    /* Replace this tutorial avatar with your preferred background image. */
+    -fx-background-image: url("../images/DaDuke.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+/* Alternative background layouts (use one in .root above):
+ * Stretch: -fx-background-size: 100% 100%;
+ * Round tiles: -fx-background-size: 400px 600px; -fx-background-repeat: round;
+ * Spaced tiles: -fx-background-size: 400px 600px; -fx-background-repeat: space;
+ * Repeated tiles: -fx-background-size: 400px 600px; -fx-background-repeat: repeat;
+ * Repeat horizontally, stretch vertically:
+ * -fx-background-size: 400px 100%; -fx-background-repeat: repeat no-repeat;
+ */
+
+.text-field {
+    -fx-background-color: #d9ffe2;
+    -fx-font: 20px "Arial";
+}
+
+.button {
+    -fx-background-color: mediumspringgreen;
+    -fx-font: italic bold 16px "Arial";
+}
+
+.button:hover {
+    -fx-background-color: cyan;
+    -fx-font-size: 18px;
+}
+
+.button:pressed {
+    -fx-background-color: orange;
+    -fx-font-size: 20px;
+}
+
+/* A translucent layer dims the background image behind the conversation. */
+.scroll-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar {
+    -fx-font-size: 10px;
+    -fx-background-color: main-color;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ff9cb4;
+    -fx-background-radius: 1em;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-pref-height: 0;
+    -fx-opacity: 0;
+}
